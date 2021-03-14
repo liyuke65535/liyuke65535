@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="644.0" prefWidth="600.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StaffScoreController">
+<!--    <Button fx:id="Wselect" layoutX="447.0" layoutY="132.0" mnemonicParsing="false" onAction="#wSelect" prefWidth="88.0" text="   搜索">-->
+<!--        <styleClass>-->
+<!--            <String fx:value="warm-theme" />-->
+<!--            <String fx:value="btn-radius" />-->
+<!--        </styleClass>-->
+<!--    </Button>-->
+    <Button fx:id="WSet" layoutX="280.0" layoutY="420.0" mnemonicParsing="false" onAction="#wSet" text="确认">
+        <styleClass>
+            <String fx:value="warm-theme" />
+            <String fx:value="btn-radius" />
+        </styleClass>
+    </Button>
+    <TextField fx:id="staffId" layoutX="210.0" layoutY="135.0" prefHeight="36.0" prefWidth="280.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </TextField>
+<!--    <FontAwesomeIconView glyphName="SEARCH" layoutX="458.0" layoutY="158.0" size="18" />-->
+    <Label layoutX="230.0" layoutY="15.0" prefHeight="60.0" text=" 添加工作人员评分" textFill="#000000">
+        <styleClass>
+            <String fx:value="font-title" />
+        </styleClass>
+    </Label>
+    <Label layoutX="109.0" layoutY="204.0" prefHeight="30.0" prefWidth="65.0" text="  日期  ">
+        <styleClass>
+            <String fx:value="blue-theme" />
+            <String fx:value="box" />
+        </styleClass>
+    </Label>
+    <TextField fx:id="date" text="2021-03-11" alignment="CENTER" layoutX="179.0" layoutY="202.0" prefHeight="30.0" prefWidth="135.0" />
+    <Label layoutX="348.0" layoutY="204.0" prefHeight="30.0" prefWidth="65.0" text="  卫生  ">
+        <styleClass>
+            <String fx:value="box" />
+            <String fx:value="blue-theme" />
+        </styleClass>
+    </Label>
+    <TextField fx:id="hygiene" alignment="CENTER" layoutX="431" layoutY="202.0" prefHeight="30.0" prefWidth="155.0" />
+    <Label layoutX="348.0" layoutY="269.0" prefHeight="30.0" prefWidth="65.0" text="  政治  ">
+        <styleClass>
+            <String fx:value="box" />
+            <String fx:value="blue-theme" />
+        </styleClass>
+    </Label>
+    <TextField fx:id="politics" alignment="CENTER" layoutX="431.0" layoutY="267.0" prefHeight="30.0" prefWidth="155.0" />
+    <Label layoutX="109.0" layoutY="264.0" prefHeight="30.0" prefWidth="65.0" text="  考勤  ">
+        <styleClass>
+            <String fx:value="blue-theme" />
+            <String fx:value="box" />
+        </styleClass>
+    </Label>
+    <TextField fx:id="attendance" alignment="CENTER" layoutX="179.0" layoutY="262.0" prefHeight="30.0" prefWidth="135.0" />
+    <Label layoutX="106.0" layoutY="335.0" text=" 贡献度 ">
+        <styleClass>
+            <String fx:value="blue-theme" />
+            <String fx:value="box" />
+        </styleClass>
+    </Label>
+    <TextField fx:id="contribution" alignment="CENTER" layoutX="179.0" layoutY="333.0" prefHeight="30.0" prefWidth="140.0" />
+    <Label layoutX="348.0" layoutY="335.0" prefHeight="30.0" prefWidth="65.0" text="  合作">
+        <styleClass>
+            <String fx:value="box" />
+            <String fx:value="blue-theme" />
+        </styleClass>
+    </Label>
+    <TextField fx:id="cooperation" alignment="CENTER" layoutX="431.0" layoutY="333.0" prefHeight="30.0" prefWidth="155.0" />
+    <Label layoutX="80.0" layoutY="135.0" prefHeight="34.0" prefWidth="122.0" style="-fx-background-radius: 5px;" styleClass="warm-theme" text="  工作人员卡号：" />
+    <Label fx:id="wLabelMsg" layoutX="500.0" layoutY="145.0" textFill="RED" wrapText="true" />
+</AnchorPane>

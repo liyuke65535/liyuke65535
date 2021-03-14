@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+<?import java.lang.String?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import com.sun.javafx.scene.control.skin.TabPaneSkin.TabControlButtons?>
+<AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/main.css" fx:controller="controller.StaffScoreController" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="bookDetail" prefHeight="480.0" stylesheets="@../css/style.css">
+        <children>
+            <JFXTabPane fx:id="jfxTabPane" onMouseClicked="#tabClick" prefHeight="640.0" prefWidth="900.0" styleClass="familyName">
+                <tabs>
+                    <Tab fx:id="week" text="周排行">
+                        <content>
+                            <TableView fx:id="weekRankLook" prefHeight="470.0" prefWidth="700.0" >
+                                <columns>
+<!--                                    <TableColumn fx:id="weekRank" editable="false" prefWidth="80.0" sortable="false" text="周排名" />-->
+                                    <TableColumn fx:id="id1" editable="false" prefWidth="90.0" sortable="false" text="员工号" />
+                                    <TableColumn fx:id="name1" editable="false" prefWidth="150.0" sortable="false" text="姓名" />
+                                    <TableColumn fx:id="sex1" editable="false" prefWidth="100.0" sortable="false" text="性别" />
+                                    <TableColumn fx:id="createDate1" editable="false" prefWidth="150.0" sortable="false" text="入职时间" />
+                                    <TableColumn fx:id="weekScore1" editable="false" prefWidth="100.0" sortable="false" text="本周均分" />
+                                    <TableColumn fx:id="monthScore1" editable="false" prefWidth="100.0" sortable="false" text="本月均分" />
+                                </columns>
+                            </TableView>
+                        </content>
+                    </Tab>
+                    <Tab fx:id="month" text="月排行">
+                        <content>
+                            <TableView fx:id="monthRankLook" prefHeight="470.0" prefWidth="700.0">
+                                <columns>
+<!--                                    <TableColumn fx:id="monthRank" editable="false" prefWidth="80.0" sortable="false" text="月排名" />-->
+                                    <TableColumn fx:id="id2" editable="false" prefWidth="90.0" sortable="false" text="员工号" />
+                                    <TableColumn fx:id="name2" editable="false" prefWidth="150.0" sortable="false" text="姓名" />
+                                    <TableColumn fx:id="sex2" editable="false" prefWidth="100.0" sortable="false" text="性别" />
+                                    <TableColumn fx:id="createDate2" editable="false" prefWidth="150.0" sortable="false" text="入职时间" />
+                                    <TableColumn fx:id="weekScore2" editable="false" prefWidth="100.0" sortable="false" text="本周均分" />
+                                    <TableColumn fx:id="monthScore2" editable="false" prefWidth="100.0" sortable="false" text="本月均分" />
+                                </columns>
+                            </TableView>
+                        </content>
+                    </Tab>
+                </tabs>
+            </JFXTabPane>
+        </children>
+    </AnchorPane>
+</AnchorPane>
+
